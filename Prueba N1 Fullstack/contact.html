@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TiendaProductosG - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="contact">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ProductosG</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html" class="active">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html">Ingresar</a>
+        <a href="register.html">Registro</a>
+        <button id="cart-btn" class="cart-btn" aria-label="Ver carrito">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="container contact-section">
+      <h1>Formulario de Contacto</h1>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Nombre y Apellido</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ProductosG</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

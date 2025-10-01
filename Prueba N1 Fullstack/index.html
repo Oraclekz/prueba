@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TiendaProductosG - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ProductosG</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html">Ingresar</a>
+        <a href="register.html">Registro</a>
+        <button id="cart-btn" class="cart-btn" aria-label="Ver carrito">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <h1>Bienvenido a ProductosG</h1>
+        <p>Productos seleccionados y ofertas. Sigue el mockup: imagen principal y llamada a la acción.</p>
+        <a class="btn" href="productos.html">Ver productos</a>
+      </div>
+      <div class="hero-image" aria-hidden="true"></div>
+    </section>
+
+    <section id="productos" class="container products-section">
+  <h2>Nuestros Productos</h2>
+  <div id="product-grid" class="product-grid">
+    <!-- productos generados por JS -->
+  </div>
+</section>
+
+  </main>
+  
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ProductosG</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

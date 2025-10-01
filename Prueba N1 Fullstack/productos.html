@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ProductosG</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+      <a href="login.html">Ingresar</a>
+      <a href="register.html">Registro</a>
+      <button id="cart-btn" class="cart-btn" aria-label="Ver carrito" onclick="verCarrito()">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <h2>Lista de Productos</h2>
+    <section class="products-section">
+      <!-- Aquí se inyectan las tarjetas desde main.js -->
+      <div id="lista-productos" class="product-grid"></div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© 2025 ProductosG </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Modal Detalle -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+</body>
+</html>
+

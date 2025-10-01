@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ProductosG</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html">Ingresar</a>
+        <a href="register.html">Registro</a>
+        <button id="cart-btn" class="cart-btn" aria-label="Ver carrito">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Tu Carrito</h1>
+    <div id="carrito-lista" class="carrito-contenedor"></div>
+    <p id="total"></p>
+    <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ProductosG</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
